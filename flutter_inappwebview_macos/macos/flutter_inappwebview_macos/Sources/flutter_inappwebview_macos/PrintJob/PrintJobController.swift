@@ -16,9 +16,9 @@ public enum PrintJobState: Int {
 }
 
 public class PrintJobController: NSObject, Disposable {
-    static let METHOD_CHANNEL_NAME_PREFIX = "com.pichillilorenzo/flutter_inappwebview_printjobcontroller_"
+    static let METHOD_CHANNEL_NAME_PREFIX = "dev.futbolista.nsg_fix/flutter_inappwebview_printjobcontroller_"
     var id: String
-    var plugin: InAppWebViewFlutterPlugin?
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     var job: NSPrintOperation?
     var settings: PrintJobSettings?
     var channelDelegate: PrintJobChannelDelegate?
@@ -31,7 +31,7 @@ public class PrintJobController: NSObject, Disposable {
                                           _ success: Bool,
                                           _ contextInfo: UnsafeMutableRawPointer?) -> Void
     
-    public init(plugin: InAppWebViewFlutterPlugin, id: String, job: NSPrintOperation? = nil, settings: PrintJobSettings? = nil) {
+    public init(plugin: InAppWebViewNsgFixFlutterPlugin, id: String, job: NSPrintOperation? = nil, settings: PrintJobSettings? = nil) {
         self.id = id
         self.plugin = plugin
         super.init()

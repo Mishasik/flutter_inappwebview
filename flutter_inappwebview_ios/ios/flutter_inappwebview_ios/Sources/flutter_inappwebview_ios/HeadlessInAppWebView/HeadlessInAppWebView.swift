@@ -9,14 +9,14 @@ import Foundation
 import Flutter
 
 public class HeadlessInAppWebView: Disposable {
-    static let METHOD_CHANNEL_NAME_PREFIX = "com.pichillilorenzo/flutter_headless_inappwebview_"
+    static let METHOD_CHANNEL_NAME_PREFIX = "dev.futbolista.nsg_fix/flutter_headless_inappwebview_"
 
     var id: String
     var channelDelegate: HeadlessWebViewChannelDelegate?
     var flutterWebView: FlutterWebViewController?
-    var plugin: InAppWebViewFlutterPlugin?
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     
-    public init(plugin: InAppWebViewFlutterPlugin, id: String, flutterWebView: FlutterWebViewController) {
+    public init(plugin: InAppWebViewNsgFixFlutterPlugin, id: String, flutterWebView: FlutterWebViewController) {
         self.id = id
         self.flutterWebView = flutterWebView
         self.plugin = plugin

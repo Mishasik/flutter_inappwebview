@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 /// Object specifying creation parameters for creating a [AndroidWebMessageListener].
 ///
@@ -56,7 +56,7 @@ class AndroidWebMessageListener extends PlatformWebMessageListener
       "allowedOriginRules cannot contain empty strings",
     );
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_inappwebview_web_message_listener_${_id}_${params.jsObjectName}',
+      'dev.futbolista.nsg_fix/flutter_inappwebview_web_message_listener_${_id}_${params.jsObjectName}',
     );
     handler = _handleMethod;
     initMethodCallHandler();

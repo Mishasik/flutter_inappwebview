@@ -16,7 +16,7 @@ class PluginInstance;
 class HeadlessInAppWebViewManager {
  public:
   static constexpr const char* METHOD_CHANNEL_NAME =
-      "com.pichillilorenzo/flutter_headless_inappwebview";
+      "dev.futbolista.nsg_fix/flutter_headless_inappwebview";
 
   HeadlessInAppWebViewManager(PluginInstance* plugin);
   ~HeadlessInAppWebViewManager();

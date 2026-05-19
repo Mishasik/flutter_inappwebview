@@ -3,7 +3,7 @@ import 'dart:collection';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 import '../find_interaction/find_interaction_controller.dart';
 import '../in_app_webview/in_app_webview_controller.dart';
@@ -79,7 +79,7 @@ class AndroidInAppBrowser extends PlatformInAppBrowser with ChannelController {
       params as AndroidInAppBrowserCreationParams;
 
   static const MethodChannel _staticChannel = const MethodChannel(
-    'com.pichillilorenzo/flutter_inappbrowser',
+    'dev.futbolista.nsg_fix/flutter_inappbrowser',
   );
 
   ContextMenu? _contextMenu;
@@ -97,7 +97,7 @@ class AndroidInAppBrowser extends PlatformInAppBrowser with ChannelController {
   }
 
   _init() {
-    channel = MethodChannel('com.pichillilorenzo/flutter_inappbrowser_$id');
+    channel = MethodChannel('dev.futbolista.nsg_fix/flutter_inappbrowser_$id');
     handler = _handleMethod;
     initMethodCallHandler();
 

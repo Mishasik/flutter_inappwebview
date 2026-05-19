@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 import '../../web/in_app_webview_manager.dart';
 import 'headless_in_app_webview.dart';
 
@@ -296,7 +296,7 @@ class WebPlatformInAppWebViewWidget extends PlatformInAppWebViewWidget {
     }
 
     return HtmlElementView(
-      viewType: 'com.pichillilorenzo/flutter_inappwebview',
+      viewType: 'dev.futbolista.nsg_fix/flutter_inappwebview',
       onPlatformViewCreated: (int viewId) {
         var webViewHtmlElement = InAppWebViewManager.webViews[viewId]!;
         webViewHtmlElement.initialSettings = initialSettings;

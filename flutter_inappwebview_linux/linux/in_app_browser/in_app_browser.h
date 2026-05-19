@@ -55,7 +55,7 @@ struct InAppBrowserCreationParams {
 class InAppBrowser {
  public:
   static constexpr const char* METHOD_CHANNEL_NAME_PREFIX =
-      "com.pichillilorenzo/flutter_inappbrowser_";
+      "dev.futbolista.nsg_fix/flutter_inappbrowser_";
 
   /// Create an InAppBrowser with the given parameters
   /// @param manager The manager that owns this browser

@@ -1,7 +1,7 @@
 import 'package:web/web.dart';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 import 'in_app_webview_manager.dart';
 import 'in_app_web_view_web_element.dart';
 import 'headless_in_app_web_view_web_element.dart';
@@ -14,7 +14,7 @@ class HeadlessInAppWebViewManager extends ChannelController {
   HeadlessInAppWebViewManager({required BinaryMessenger messenger}) {
     this._messenger = messenger;
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_headless_inappwebview',
+      'dev.futbolista.nsg_fix/flutter_headless_inappwebview',
       const StandardMethodCodec(),
       _messenger,
     );

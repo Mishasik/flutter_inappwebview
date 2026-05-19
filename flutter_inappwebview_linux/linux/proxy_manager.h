@@ -46,7 +46,7 @@ struct ProxySettings {
 class ProxyManager : public ChannelDelegate {
  public:
   static constexpr const char* METHOD_CHANNEL_NAME =
-      "com.pichillilorenzo/flutter_inappwebview_proxycontroller";
+      "dev.futbolista.nsg_fix/flutter_inappwebview_proxycontroller";
 
   ProxyManager(PluginInstance* plugin);
   ~ProxyManager() override;

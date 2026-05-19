@@ -101,7 +101,7 @@ window.)JS" +
            get_JAVASCRIPT_BRIDGE_NAME() + R"JS( != null && 
       window.)JS" +
            get_JAVASCRIPT_BRIDGE_NAME() + R"JS(._platformReady == null) {
-    window.dispatchEvent(new Event('flutterInAppWebViewPlatformReady'));
+    window.dispatchEvent(new Event('flutterInAppWebViewNsgFixPlatformReady'));
     window.)JS" +
            get_JAVASCRIPT_BRIDGE_NAME() + R"JS(._platformReady = true;
   }

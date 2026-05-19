@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 /// Object specifying creation parameters for creating a [LinuxProxyController].
 ///
@@ -31,7 +31,7 @@ class LinuxProxyControllerCreationParams
 /// [WebKitNetworkProxySettings](https://wpewebkit.org/reference/stable/wpe-webkit-2.0/struct.NetworkProxySettings.html).
 class LinuxProxyController extends PlatformProxyController {
   static const MethodChannel _channel = MethodChannel(
-    'com.pichillilorenzo/flutter_inappwebview_proxycontroller',
+    'dev.futbolista.nsg_fix/flutter_inappwebview_proxycontroller',
   );
 
   /// Creates a new [LinuxProxyController].

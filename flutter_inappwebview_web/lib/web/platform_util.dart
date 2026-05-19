@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:js_interop';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 import 'js_bridge.dart';
 
@@ -12,7 +12,7 @@ class PlatformUtil extends ChannelController {
     this._messenger = messenger;
 
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_inappwebview_platformutil',
+      'dev.futbolista.nsg_fix/flutter_inappwebview_platformutil',
       const StandardMethodCodec(),
       _messenger,
     );

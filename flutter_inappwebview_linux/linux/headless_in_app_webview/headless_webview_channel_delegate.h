@@ -20,7 +20,7 @@ class HeadlessInAppWebView;
 class HeadlessWebViewChannelDelegate : public ChannelDelegate {
  public:
   static constexpr const char* METHOD_CHANNEL_NAME_PREFIX =
-      "com.pichillilorenzo/flutter_headless_inappwebview_";
+      "dev.futbolista.nsg_fix/flutter_headless_inappwebview_";
 
   HeadlessWebViewChannelDelegate(HeadlessInAppWebView* headlessWebView,
                                   FlBinaryMessenger* messenger,

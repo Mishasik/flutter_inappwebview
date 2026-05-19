@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 /// Object specifying creation parameters for creating a [MacOSWebAuthenticationSession].
 ///
@@ -63,7 +63,7 @@ class MacOSWebAuthenticationSession extends PlatformWebAuthenticationSession
   late final WebAuthenticationSessionCompletionHandler onComplete;
 
   static const MethodChannel _staticChannel = const MethodChannel(
-    'com.pichillilorenzo/flutter_webauthenticationsession',
+    'dev.futbolista.nsg_fix/flutter_webauthenticationsession',
   );
 
   @override
@@ -105,7 +105,7 @@ class MacOSWebAuthenticationSession extends PlatformWebAuthenticationSession
     this.initialSettings =
         initialSettings ?? WebAuthenticationSessionSettings();
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_webauthenticationsession_$id',
+      'dev.futbolista.nsg_fix/flutter_webauthenticationsession_$id',
     );
     handler = _handleMethod;
     initMethodCallHandler();

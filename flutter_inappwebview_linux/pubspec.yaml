@@ -20,7 +20,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_inappwebview_platform_interface: ^1.4.0-beta.3
+  flutter_inappwebview_platform_interface_nsg_fix:
+    path: ../flutter_inappwebview_platform_interface
     # path: ../flutter_inappwebview_platform_interface
 
 dev_dependencies:
@@ -44,7 +45,7 @@ flutter:
   # All these are used by the tooling to maintain consistency when
   # adding or updating assets for this project.
   plugin:
-    implements: flutter_inappwebview
+    implements: flutter_inappwebview_nsg_fix
     platforms:
       linux:
         pluginClass: FlutterInappwebviewLinuxPlugin

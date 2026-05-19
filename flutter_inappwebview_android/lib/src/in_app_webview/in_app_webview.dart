@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 import '../find_interaction/find_interaction_controller.dart';
 import '../pull_to_refresh/pull_to_refresh_controller.dart';
@@ -328,7 +328,7 @@ class AndroidInAppWebViewWidget extends PlatformInAppWebViewWidget {
 
     return PlatformViewLink(
       key: params.key,
-      viewType: 'com.pichillilorenzo/flutter_inappwebview',
+      viewType: 'dev.futbolista.nsg_fix/flutter_inappwebview',
       surfaceFactory:
           (BuildContext context, PlatformViewController controller) {
             return AndroidViewSurface(
@@ -343,7 +343,7 @@ class AndroidInAppWebViewWidget extends PlatformInAppWebViewWidget {
         return _createAndroidViewController(
             hybridComposition: useHybridComposition,
             id: params.id,
-            viewType: 'com.pichillilorenzo/flutter_inappwebview',
+            viewType: 'dev.futbolista.nsg_fix/flutter_inappwebview',
             layoutDirection:
                 this.params.layoutDirection ??
                 Directionality.maybeOf(context) ??

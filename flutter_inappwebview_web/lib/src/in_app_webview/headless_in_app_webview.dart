@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 import 'in_app_webview_controller.dart';
 
 /// Object specifying creation parameters for creating a [WebPlatformHeadlessInAppWebView].
@@ -250,7 +250,7 @@ class WebPlatformHeadlessInAppWebView extends PlatformHeadlessInAppWebView
   bool _running = false;
 
   static const MethodChannel _sharedChannel = const MethodChannel(
-    'com.pichillilorenzo/flutter_headless_inappwebview',
+    'dev.futbolista.nsg_fix/flutter_headless_inappwebview',
   );
 
   WebPlatformInAppWebViewController? _webViewController;
@@ -297,7 +297,7 @@ class WebPlatformHeadlessInAppWebView extends PlatformHeadlessInAppWebView
         params.controllerFromPlatform?.call(_webViewController!) ??
         _webViewController!;
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_headless_inappwebview_$id',
+      'dev.futbolista.nsg_fix/flutter_headless_inappwebview_$id',
     );
     handler = _handleMethod;
     initMethodCallHandler();

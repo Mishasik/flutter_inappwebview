@@ -1,7 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 /// Object specifying creation parameters for creating a [AndroidPullToRefreshController].
 ///
@@ -175,7 +175,7 @@ class AndroidPullToRefreshController extends PlatformPullToRefreshController
 extension InternalPullToRefreshController on AndroidPullToRefreshController {
   void init(dynamic id) {
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_inappwebview_pull_to_refresh_$id',
+      'dev.futbolista.nsg_fix/flutter_inappwebview_pull_to_refresh_$id',
     );
     handler = _handleMethod;
     initMethodCallHandler();

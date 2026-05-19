@@ -22,7 +22,7 @@ class InAppWebView;
 class WebMessageChannel : public ChannelDelegate {
  public:
   static constexpr const char* METHOD_CHANNEL_NAME_PREFIX =
-      "com.pichillilorenzo/flutter_inappwebview_web_message_channel_";
+      "dev.futbolista.nsg_fix/flutter_inappwebview_web_message_channel_";
 
   WebMessageChannel(FlBinaryMessenger* messenger, const std::string& channelId,
                     InAppWebView* webView);

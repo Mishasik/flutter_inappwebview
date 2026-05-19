@@ -9,11 +9,11 @@ import Flutter
 
 @available(iOS 17.0, *)
 public class ProxyManager: ChannelDelegate {
-    static let METHOD_CHANNEL_NAME = "com.pichillilorenzo/flutter_inappwebview_proxycontroller"
+    static let METHOD_CHANNEL_NAME = "dev.futbolista.nsg_fix/flutter_inappwebview_proxycontroller"
 
-    private var plugin: InAppWebViewFlutterPlugin?
+    private var plugin: InAppWebViewNsgFixFlutterPlugin?
 
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         super.init(channel: FlutterMethodChannel(name: ProxyManager.METHOD_CHANNEL_NAME, binaryMessenger: plugin.registrar.messenger()))
         self.plugin = plugin
     }

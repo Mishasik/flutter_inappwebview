@@ -14,10 +14,10 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
                             WKDownloadDelegate,
                             PullToRefreshDelegate,
                             Disposable {
-    static let METHOD_CHANNEL_NAME_PREFIX = "com.pichillilorenzo/flutter_inappwebview_"
+    static let METHOD_CHANNEL_NAME_PREFIX = "dev.futbolista.nsg_fix/flutter_inappwebview_"
 
     var id: Any? // viewId
-    var plugin: InAppWebViewFlutterPlugin?
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     var windowId: Int64?
     var windowCreated = false
     var windowBeforeCreatedCallbacks: [() -> ()] = []
@@ -73,7 +73,7 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
     private var exceptedBridgeSecret = NSUUID().uuidString
     private var javaScriptBridgeEnabled = true
     
-    init(id: Any?, plugin: InAppWebViewFlutterPlugin?, frame: CGRect, configuration: WKWebViewConfiguration,
+    init(id: Any?, plugin: InAppWebViewNsgFixFlutterPlugin?, frame: CGRect, configuration: WKWebViewConfiguration,
          contextMenu: [String: Any]?, userScripts: [UserScript] = []) {
         super.init(frame: frame, configuration: configuration)
         self.id = id

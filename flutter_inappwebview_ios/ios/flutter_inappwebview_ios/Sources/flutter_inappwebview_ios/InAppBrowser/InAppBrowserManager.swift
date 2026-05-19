@@ -12,15 +12,15 @@ import Foundation
 import AVFoundation
 
 public class InAppBrowserManager: ChannelDelegate {
-    static let METHOD_CHANNEL_NAME = "com.pichillilorenzo/flutter_inappbrowser"
+    static let METHOD_CHANNEL_NAME = "dev.futbolista.nsg_fix/flutter_inappbrowser"
     static let WEBVIEW_STORYBOARD = "WebView"
     static let WEBVIEW_STORYBOARD_CONTROLLER_ID = "viewController"
     static let NAV_STORYBOARD_CONTROLLER_ID = "navController"
-    var plugin: InAppWebViewFlutterPlugin?
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
 
     var navControllers: [String: InAppBrowserNavigationController?] = [:]
     
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         super.init(channel: FlutterMethodChannel(name: InAppBrowserManager.METHOD_CHANNEL_NAME, binaryMessenger: plugin.registrar.messenger()))
         self.plugin = plugin
     }
@@ -97,7 +97,7 @@ public class InAppBrowserManager: ChannelDelegate {
         #if SWIFT_PACKAGE
             let storyboard = UIStoryboard(name: InAppBrowserManager.WEBVIEW_STORYBOARD, bundle: Bundle.module)
         #else
-            let storyboard = UIStoryboard(name: InAppBrowserManager.WEBVIEW_STORYBOARD, bundle: Bundle(for: InAppWebViewFlutterPlugin.self))
+            let storyboard = UIStoryboard(name: InAppBrowserManager.WEBVIEW_STORYBOARD, bundle: Bundle(for: InAppWebViewNsgFixFlutterPlugin.self))
         #endif
         let navController = storyboard.instantiateViewController(withIdentifier: InAppBrowserManager.NAV_STORYBOARD_CONTROLLER_ID) as! InAppBrowserNavigationController
         webViewController.edgesForExtendedLayout = []

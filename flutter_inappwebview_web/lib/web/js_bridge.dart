@@ -44,7 +44,7 @@ extension type JSWebView._(JSObject _) implements JSObject {
   external JSSize getSize();
 }
 
-@JS('window.flutter_inappwebview_plugin')
+@JS('window.flutter_inappwebview_nsg_fix_plugin')
 external FlutterInAppWebViewBridge? get flutterInAppWebView;
 
 extension type FlutterInAppWebViewBridge._(JSObject _) implements JSObject {

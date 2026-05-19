@@ -7,7 +7,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 import '../in_app_browser/in_app_browser.dart';
 import '../print_job/main.dart';
@@ -85,7 +85,7 @@ class MacOSInAppWebViewController extends PlatformInAppWebViewController
                 params,
               ),
       ) {
-    channel = MethodChannel('com.pichillilorenzo/flutter_inappwebview_$id');
+    channel = MethodChannel('dev.futbolista.nsg_fix/flutter_inappwebview_$id');
     handler = handleMethod;
     initMethodCallHandler();
 
@@ -3056,12 +3056,12 @@ class MacOSInAppWebViewController extends PlatformInAppWebViewController
 
   @override
   Future<String> get tRexRunnerHtml async => await rootBundle.loadString(
-    'packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html',
+    'packages/flutter_inappwebview_nsg_fix/assets/t_rex_runner/t-rex.html',
   );
 
   @override
   Future<String> get tRexRunnerCss async => await rootBundle.loadString(
-    'packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css',
+    'packages/flutter_inappwebview_nsg_fix/assets/t_rex_runner/t-rex.css',
   );
 
   @override

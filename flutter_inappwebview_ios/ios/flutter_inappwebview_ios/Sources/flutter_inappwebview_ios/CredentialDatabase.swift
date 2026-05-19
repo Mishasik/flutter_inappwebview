@@ -9,12 +9,12 @@ import Foundation
 import Flutter
 
 public class CredentialDatabase: ChannelDelegate {
-    static let METHOD_CHANNEL_NAME = "com.pichillilorenzo/flutter_inappwebview_credential_database"
+    static let METHOD_CHANNEL_NAME = "dev.futbolista.nsg_fix/flutter_inappwebview_credential_database"
     static let credentialStore = URLCredentialStorage.shared
 
-    private var plugin: InAppWebViewFlutterPlugin?
+    private var plugin: InAppWebViewNsgFixFlutterPlugin?
 
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         super.init(channel: FlutterMethodChannel(name: CredentialDatabase.METHOD_CHANNEL_NAME, binaryMessenger: plugin.registrar.messenger()))
         self.plugin = plugin
     }

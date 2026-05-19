@@ -19,7 +19,7 @@ class WebMessageListener;
  *
  * This follows the federated plugin pattern matching iOS/Android:
  * - Dedicated MethodChannel per WebMessageListener instance
- * - Channel name: com.pichillilorenzo/flutter_inappwebview_web_message_listener_{id}_{jsObjectName}
+ * - Channel name: dev.futbolista.nsg_fix/flutter_inappwebview_web_message_listener_{id}_{jsObjectName}
  */
 class WebMessageListenerChannelDelegate : public ChannelDelegate {
  public:

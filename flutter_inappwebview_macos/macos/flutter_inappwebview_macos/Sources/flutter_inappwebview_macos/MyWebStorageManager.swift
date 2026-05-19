@@ -10,11 +10,11 @@ import WebKit
 import FlutterMacOS
 
 public class MyWebStorageManager: ChannelDelegate {
-    static let METHOD_CHANNEL_NAME = "com.pichillilorenzo/flutter_inappwebview_webstoragemanager"
-    var plugin: InAppWebViewFlutterPlugin?
+    static let METHOD_CHANNEL_NAME = "dev.futbolista.nsg_fix/flutter_inappwebview_webstoragemanager"
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     static var websiteDataStore = WKWebsiteDataStore.default()
     
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         super.init(channel: FlutterMethodChannel(name: MyWebStorageManager.METHOD_CHANNEL_NAME, binaryMessenger: plugin.registrar.messenger))
         self.plugin = plugin
     }

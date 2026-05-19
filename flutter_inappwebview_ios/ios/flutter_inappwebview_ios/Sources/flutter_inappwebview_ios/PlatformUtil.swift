@@ -10,10 +10,10 @@ import UIKit
 import Flutter
 
 public class PlatformUtil: ChannelDelegate {
-    static let METHOD_CHANNEL_NAME = "com.pichillilorenzo/flutter_inappwebview_platformutil"
-    var plugin: InAppWebViewFlutterPlugin?
+    static let METHOD_CHANNEL_NAME = "dev.futbolista.nsg_fix/flutter_inappwebview_platformutil"
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         super.init(channel: FlutterMethodChannel(name: PlatformUtil.METHOD_CHANNEL_NAME, binaryMessenger: plugin.registrar.messenger()))
         self.plugin = plugin
     }

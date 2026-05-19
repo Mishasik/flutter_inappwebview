@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 
 import 'headless_inappwebview_manager.dart';
 import 'in_app_web_view_web_element.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 class HeadlessInAppWebViewWebElement extends ChannelController {
   String id;
@@ -19,7 +19,7 @@ class HeadlessInAppWebViewWebElement extends ChannelController {
     this._messenger = messenger;
 
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_headless_inappwebview_${this.id}',
+      'dev.futbolista.nsg_fix/flutter_headless_inappwebview_${this.id}',
       const StandardMethodCodec(),
       _messenger,
     );

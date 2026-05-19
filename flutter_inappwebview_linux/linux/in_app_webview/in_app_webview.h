@@ -124,7 +124,7 @@ enum class WpePointerButton { None = 0, Primary = 1, Secondary = 2, Tertiary = 3
 class InAppWebView {
  public:
   static constexpr const char* METHOD_CHANNEL_NAME_PREFIX =
-      "com.pichillilorenzo/flutter_inappwebview_";
+      "dev.futbolista.nsg_fix/flutter_inappwebview_";
 
   InAppWebView(FlPluginRegistrar* registrar, FlBinaryMessenger* messenger, int64_t id,
                const InAppWebViewCreationParams& params);

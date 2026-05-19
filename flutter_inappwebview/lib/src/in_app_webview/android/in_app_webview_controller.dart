@@ -1,6 +1,6 @@
 import 'dart:core';
 
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 import '../in_app_webview_controller.dart';
 

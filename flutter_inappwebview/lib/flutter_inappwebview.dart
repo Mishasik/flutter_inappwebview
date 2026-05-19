@@ -19,9 +19,9 @@
  *
 */
 
-library flutter_inappwebview;
+library flutter_inappwebview_nsg_fix;
 
-export 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart'
+export 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart'
     hide
         ChannelController,
         InternalChannelController,

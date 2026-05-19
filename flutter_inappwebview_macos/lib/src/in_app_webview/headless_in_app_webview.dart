@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 import '../find_interaction/find_interaction_controller.dart';
 import 'in_app_webview_controller.dart';
 
@@ -255,7 +255,7 @@ class MacOSHeadlessInAppWebView extends PlatformHeadlessInAppWebView
   bool _running = false;
 
   static const MethodChannel _sharedChannel = const MethodChannel(
-    'com.pichillilorenzo/flutter_headless_inappwebview',
+    'dev.futbolista.nsg_fix/flutter_headless_inappwebview',
   );
 
   MacOSInAppWebViewController? _webViewController;
@@ -296,7 +296,7 @@ class MacOSHeadlessInAppWebView extends PlatformHeadlessInAppWebView
         _webViewController!;
     _macosParams.findInteractionController?.init(id);
     channel = MethodChannel(
-      'com.pichillilorenzo/flutter_headless_inappwebview_$id',
+      'dev.futbolista.nsg_fix/flutter_headless_inappwebview_$id',
     );
     handler = _handleMethod;
     initMethodCallHandler();

@@ -85,7 +85,7 @@ namespace flutter_inappwebview_plugin
     {
       return "(function() { \
          if ((window.top == null || window.top === window) && window." + get_JAVASCRIPT_BRIDGE_NAME() + " != null && window." + get_JAVASCRIPT_BRIDGE_NAME() + "._platformReady == null) { \
-           window.dispatchEvent(new Event('flutterInAppWebViewPlatformReady')); \
+           window.dispatchEvent(new Event('flutterInAppWebViewNsgFixPlatformReady')); \
            window." + get_JAVASCRIPT_BRIDGE_NAME() + "._platformReady = true; \
          } \
        })();";

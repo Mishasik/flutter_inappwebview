@@ -4,7 +4,7 @@ import 'dart:js_interop';
 import 'dart:ui_web' as ui_web;
 
 import 'package:flutter/foundation.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 
 import '../src/inappwebview_platform.dart';
@@ -17,11 +17,11 @@ import 'platform_util.dart';
 /// Builds an iframe based WebView.
 ///
 /// This is used as the default implementation for `WebView` on web.
-class InAppWebViewFlutterPlugin {
-  /// Constructs a new instance of [InAppWebViewFlutterPlugin].
-  InAppWebViewFlutterPlugin(Registrar registrar) {
+class InAppWebViewNsgFixFlutterPlugin {
+  /// Constructs a new instance of [InAppWebViewNsgFixFlutterPlugin].
+  InAppWebViewNsgFixFlutterPlugin(Registrar registrar) {
     ui_web.platformViewRegistry.registerViewFactory(
-      'com.pichillilorenzo/flutter_inappwebview',
+      'dev.futbolista.nsg_fix/flutter_inappwebview',
       (int viewId) {
         var webView = InAppWebViewWebElement(
           viewId: viewId,
@@ -36,7 +36,7 @@ class InAppWebViewFlutterPlugin {
   static void registerWith(Registrar registrar) {
     WebPlatformInAppWebViewPlatform.registerWith();
     // ignore: unused_local_variable
-    final pluginInstance = InAppWebViewFlutterPlugin(registrar);
+    final pluginInstance = InAppWebViewNsgFixFlutterPlugin(registrar);
     // ignore: unused_local_variable
     final platformUtil = PlatformUtil(messenger: registrar);
     // ignore: unused_local_variable
@@ -65,7 +65,7 @@ class InAppWebViewFlutterPlugin {
       }
     } else {
       if (kDebugMode) {
-        print("Error: window.flutter_inappwebview_plugin is not available!");
+        print("Error: window.flutter_inappwebview_nsg_fix_plugin is not available!");
       }
     }
   }

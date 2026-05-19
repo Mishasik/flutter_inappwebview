@@ -14,7 +14,7 @@ public class FlutterWebViewController: NSObject, FlutterPlatformView, Disposable
     var myView: UIView?
     var keepAliveId: String?
 
-    init(plugin: InAppWebViewFlutterPlugin, withFrame frame: CGRect, viewIdentifier viewId: Any, params: NSDictionary) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin, withFrame frame: CGRect, viewIdentifier viewId: Any, params: NSDictionary) {
         super.init()
         
         myView = UIView(frame: frame)

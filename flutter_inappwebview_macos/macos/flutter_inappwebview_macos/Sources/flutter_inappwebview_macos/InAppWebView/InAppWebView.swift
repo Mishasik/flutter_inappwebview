@@ -13,10 +13,10 @@ public class InAppWebView: WKWebView, WKUIDelegate,
                             WKNavigationDelegate, WKScriptMessageHandler,
                             WKDownloadDelegate,
                             Disposable {
-    static var METHOD_CHANNEL_NAME_PREFIX = "com.pichillilorenzo/flutter_inappwebview_"
+    static var METHOD_CHANNEL_NAME_PREFIX = "dev.futbolista.nsg_fix/flutter_inappwebview_"
 
     var id: Any? // viewId
-    var plugin: InAppWebViewFlutterPlugin?
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     var windowId: Int64?
     var windowCreated = false
     var windowBeforeCreatedCallbacks: [() -> ()] = []
@@ -56,7 +56,7 @@ public class InAppWebView: WKWebView, WKUIDelegate,
     
     public override var acceptsFirstResponder: Bool { return true }
     
-    init(id: Any?, plugin: InAppWebViewFlutterPlugin?, frame: CGRect, configuration: WKWebViewConfiguration,
+    init(id: Any?, plugin: InAppWebViewNsgFixFlutterPlugin?, frame: CGRect, configuration: WKWebViewConfiguration,
          userScripts: [UserScript] = []) {
         super.init(frame: frame, configuration: configuration)
         self.id = id

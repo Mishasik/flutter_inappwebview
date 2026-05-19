@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 /// Object specifying creation parameters for creating a [WindowsWebViewEnvironment].
 ///
@@ -29,7 +29,7 @@ class WindowsWebViewEnvironmentCreationParams
 class WindowsWebViewEnvironment extends PlatformWebViewEnvironment
     with ChannelController {
   static final MethodChannel _staticChannel = MethodChannel(
-    'com.pichillilorenzo/flutter_webview_environment',
+    'dev.futbolista.nsg_fix/flutter_webview_environment',
   );
 
   @override
@@ -138,7 +138,7 @@ class WindowsWebViewEnvironment extends PlatformWebViewEnvironment
     await _staticChannel.invokeMethod('create', args);
 
     env.channel = MethodChannel(
-      'com.pichillilorenzo/flutter_webview_environment_${env.id}',
+      'dev.futbolista.nsg_fix/flutter_webview_environment_${env.id}',
     );
     env.handler = env.handleMethod;
     env.initMethodCallHandler();

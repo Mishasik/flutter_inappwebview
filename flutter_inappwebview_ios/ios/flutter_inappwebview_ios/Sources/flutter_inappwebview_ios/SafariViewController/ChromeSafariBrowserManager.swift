@@ -13,12 +13,12 @@ import AVFoundation
 import SafariServices
 
 public class ChromeSafariBrowserManager: ChannelDelegate {
-    static let METHOD_CHANNEL_NAME = "com.pichillilorenzo/flutter_chromesafaribrowser"
-    var plugin: InAppWebViewFlutterPlugin?
+    static let METHOD_CHANNEL_NAME = "dev.futbolista.nsg_fix/flutter_chromesafaribrowser"
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     var browsers: [String: SafariViewController?] = [:]
     var prewarmingTokens: [String: Any?] = [:]
     
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         super.init(channel: FlutterMethodChannel(name: ChromeSafariBrowserManager.METHOD_CHANNEL_NAME, binaryMessenger: plugin.registrar.messenger()))
         self.plugin = plugin
     }

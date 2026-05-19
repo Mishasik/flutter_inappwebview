@@ -78,7 +78,7 @@ public class JavaScriptBridgeJS {
         """
     }
 
-    public static let PLATFORM_READY_JS_SOURCE = "window.dispatchEvent(new Event('flutterInAppWebViewPlatformReady'));";
+    public static let PLATFORM_READY_JS_SOURCE = "window.dispatchEvent(new Event('flutterInAppWebViewNsgFixPlatformReady'));";
 
     public static func JAVASCRIPT_UTIL_VAR_NAME() -> String {
         return "window.\(get_JAVASCRIPT_BRIDGE_NAME())._Util"

@@ -1,7 +1,7 @@
 import 'dart:core';
 
 import 'package:flutter/services.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 import '../print_job/main.dart';
 import '../web_message/main.dart';

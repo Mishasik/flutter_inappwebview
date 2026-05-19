@@ -11,11 +11,11 @@ import FlutterMacOS
 
 @available(macOS 10.13, *)
 public class MyCookieManager: ChannelDelegate {
-    static let METHOD_CHANNEL_NAME = "com.pichillilorenzo/flutter_inappwebview_cookiemanager"
-    var plugin: InAppWebViewFlutterPlugin?
+    static let METHOD_CHANNEL_NAME = "dev.futbolista.nsg_fix/flutter_inappwebview_cookiemanager"
+    var plugin: InAppWebViewNsgFixFlutterPlugin?
     static var httpCookieStore = WKWebsiteDataStore.default().httpCookieStore
     
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         super.init(channel: FlutterMethodChannel(name: MyCookieManager.METHOD_CHANNEL_NAME, binaryMessenger: plugin.registrar.messenger))
         self.plugin = plugin
     }

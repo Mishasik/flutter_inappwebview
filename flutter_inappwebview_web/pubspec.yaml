@@ -23,7 +23,8 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   web: ^1.0.0
-  flutter_inappwebview_platform_interface: ^1.4.0-beta.3
+  flutter_inappwebview_platform_interface_nsg_fix:
+    path: ../flutter_inappwebview_platform_interface
     # path: ../flutter_inappwebview_platform_interface
 
 dev_dependencies:
@@ -50,11 +51,11 @@ flutter:
   plugin:
     platforms:
       web:
-        pluginClass: InAppWebViewFlutterPlugin
+        pluginClass: InAppWebViewNsgFixFlutterPlugin
         fileName: web/main.dart
 
   assets:
-    - packages/flutter_inappwebview_web/assets/web/web_support.js
+    - packages/flutter_inappwebview_web_nsg_fix/assets/web/web_support.js
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg

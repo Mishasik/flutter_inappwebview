@@ -27,7 +27,7 @@ WebViewEnvironmentInstanceChannelDelegate::WebViewEnvironmentInstanceChannelDele
     const std::string& id,
     std::function<void(const std::string&)> disposeCallback)
     : ChannelDelegate(messenger,
-                      "com.pichillilorenzo/flutter_webview_environment_" + id),
+                      "dev.futbolista.nsg_fix/flutter_webview_environment_" + id),
       id_(id),
       disposeCallback_(std::move(disposeCallback)) {}
 

@@ -133,10 +133,10 @@ class CustomPlatformViewController
     ))!;
 
     _methodChannel = MethodChannel(
-      'com.pichillilorenzo/custom_platform_view_$_textureId',
+      'dev.futbolista.nsg_fix/custom_platform_view_$_textureId',
     );
     _eventChannel = EventChannel(
-      'com.pichillilorenzo/custom_platform_view_${_textureId}_events',
+      'dev.futbolista.nsg_fix/custom_platform_view_${_textureId}_events',
     );
     _eventStreamSubscription = _eventChannel.receiveBroadcastStream().listen((
       event,

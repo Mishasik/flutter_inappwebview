@@ -11,10 +11,10 @@ import FlutterMacOS
 import Foundation
 
 public class FlutterWebViewFactory: NSObject, FlutterPlatformViewFactory {
-    static let VIEW_TYPE_ID = "com.pichillilorenzo/flutter_inappwebview"
-    private var plugin: InAppWebViewFlutterPlugin
+    static let VIEW_TYPE_ID = "dev.futbolista.nsg_fix/flutter_inappwebview"
+    private var plugin: InAppWebViewNsgFixFlutterPlugin
     
-    init(plugin: InAppWebViewFlutterPlugin) {
+    init(plugin: InAppWebViewNsgFixFlutterPlugin) {
         self.plugin = plugin
         super.init()
     }

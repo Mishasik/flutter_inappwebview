@@ -47,7 +47,7 @@ class Cookie {
 class CookieManager : public ChannelDelegate {
  public:
   static constexpr const char* METHOD_CHANNEL_NAME =
-      "com.pichillilorenzo/flutter_inappwebview_cookiemanager";
+      "dev.futbolista.nsg_fix/flutter_inappwebview_cookiemanager";
 
   CookieManager(PluginInstance* plugin);
   ~CookieManager() override;

@@ -1255,10 +1255,10 @@ abstract class PlatformInAppWebViewController extends PlatformInterface
   ///To get the default JavaScript bridge object name, you can use the [getJavaScriptBridgeName] method.
   ///To change the default JavaScript bridge object name, you can use the [setJavaScriptBridgeName] method.
   ///
-  ///In order to call `window.flutter_inappwebview.callHandler(handlerName <String>, ...args)` properly, you need to wait and listen the JavaScript event `flutterInAppWebViewPlatformReady`.
+  ///In order to call `window.flutter_inappwebview.callHandler(handlerName <String>, ...args)` properly, you need to wait and listen the JavaScript event `flutterInAppWebViewNsgFixPlatformReady`.
   ///This event will be dispatched as soon as the platform (Android or iOS) is ready to handle the `callHandler` method.
   ///```javascript
-  ///   window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
+  ///   window.addEventListener("flutterInAppWebViewNsgFixPlatformReady", function(event) {
   ///     console.log("ready");
   ///   });
   ///```
@@ -1270,7 +1270,7 @@ abstract class PlatformInAppWebViewController extends PlatformInterface
   ///So, on the JavaScript side, to get data coming from the Dart side, you will use:
   ///```html
   ///<script>
-  ///   window.addEventListener("flutterInAppWebViewPlatformReady", function(event) {
+  ///   window.addEventListener("flutterInAppWebViewNsgFixPlatformReady", function(event) {
   ///     window.flutter_inappwebview.callHandler('handlerFoo').then(function(result) {
   ///       console.log(result);
   ///     });
