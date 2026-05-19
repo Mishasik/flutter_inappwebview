@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
-import 'package:flutter_inappwebview_macos/flutter_inappwebview_macos.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_macos_nsg_fix/flutter_inappwebview_macos.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 Future main() async {

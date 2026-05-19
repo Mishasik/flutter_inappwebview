@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
-import 'package:flutter_inappwebview_windows/flutter_inappwebview_windows.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_windows_nsg_fix/flutter_inappwebview_windows.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

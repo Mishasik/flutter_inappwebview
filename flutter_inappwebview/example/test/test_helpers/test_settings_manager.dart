@@ -1,4 +1,4 @@
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flutter_inappwebview_nsg_fix/flutter_inappwebview.dart';
 import 'package:flutter_inappwebview_example/providers/settings_manager.dart';
 
 /// Lightweight settings manager for widget tests.

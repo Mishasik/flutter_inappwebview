@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_inappwebview_linux/flutter_inappwebview_linux.dart';
-import 'package:flutter_inappwebview_platform_interface/flutter_inappwebview_platform_interface.dart';
+import 'package:flutter_inappwebview_linux_nsg_fix/flutter_inappwebview_linux.dart';
+import 'package:flutter_inappwebview_platform_interface_nsg_fix/flutter_inappwebview_platform_interface.dart';
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();

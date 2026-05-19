@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flutter_inappwebview_nsg_fix/flutter_inappwebview.dart';
 import 'package:flutter_inappwebview_example/utils/controller_methods_registry.dart';
 import 'package:flutter_inappwebview_example/utils/support_checker.dart';
 

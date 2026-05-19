@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_inappwebview/flutter_inappwebview.dart';
+import 'package:flutter_inappwebview_nsg_fix/flutter_inappwebview.dart';
 import 'package:flutter_inappwebview_example/utils/settings_defaults.dart';
 
 void main() {
