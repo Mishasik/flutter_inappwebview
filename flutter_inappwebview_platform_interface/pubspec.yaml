@@ -1,4 +1,4 @@
-name: flutter_inappwebview_platform_interface
+name: flutter_inappwebview_platform_interface_nsg_fix
 description: A common platform interface for the flutter_inappwebview plugin.
 version: 1.4.0-beta.3
 homepage: https://inappwebview.dev/

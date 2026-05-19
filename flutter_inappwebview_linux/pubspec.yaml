@@ -1,4 +1,4 @@
-name: flutter_inappwebview_linux
+name: flutter_inappwebview_linux_nsg_fix
 description: "Linux implementation of flutter_inappwebview plugin using WPE WebKit."
 version: 0.1.0-beta.1
 homepage: https://inappwebview.dev/

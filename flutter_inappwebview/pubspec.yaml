@@ -1,4 +1,4 @@
-name: flutter_inappwebview
+name: flutter_inappwebview_nsg_fix
 description: A Flutter plugin that allows you to add an inline webview, to use an headless webview, and to open an in-app browser window.
 version: 6.2.0-beta.3
 homepage: https://inappwebview.dev/

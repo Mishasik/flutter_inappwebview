@@ -1,4 +1,4 @@
-name: flutter_inappwebview_ios
+name: flutter_inappwebview_ios_nsg_fix
 description: iOS implementation of the flutter_inappwebview plugin.
 version: 1.2.0-beta.3
 homepage: https://inappwebview.dev/
